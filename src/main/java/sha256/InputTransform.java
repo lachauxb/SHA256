@@ -1,5 +1,7 @@
 package sha256;
 
+import java.nio.charset.StandardCharsets;
+
 
 class InputTransform {
     private final String input; // input
@@ -34,7 +36,7 @@ class InputTransform {
      */
     private String getAllBinaryCodes() {
         StringBuilder s = new StringBuilder();
-        byte[] bytes = input.getBytes();
+        byte[] bytes = input.getBytes(StandardCharsets.UTF_8);
         for (byte b : bytes) {
             String temp = Integer.toBinaryString((b+256)%256);
             int r = 8 - temp.length();
