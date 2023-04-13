@@ -1,4 +1,6 @@
-# SHA256
+# SHA256 in C
 
-This project contains the implementation of the SHA-256 hash algorithm in java.
-It is very easy to use : the only accessible function is __sha256.apply(String input)__
+The project contains three distinct directories :
+- sha256 : implementation of the sha256 algorithm
+- test : realisation of some tests on the implementation of the sha256 algorithm
+- unitTest : implementation of the unit tests
