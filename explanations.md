@@ -40,6 +40,7 @@ The second major step consists in a succession of binary operations on a 512-bit
     - for the first 16 elements, copy the value of the first 32-bits-lengthed value of the input tranformation  
         ```
         word[i] = S[32*i : 32*(i+1)] for i in [0;16[
+          where S is the input transformation
         ```
     - for the others, calculate
         ```
