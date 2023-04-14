@@ -34,6 +34,7 @@ example : the length of "aç" is 3 (3*8 = 24 binary symbols), encoded into
 The second major step consists in a succession of binary operations on a 512-bits-length value. Before that, two arrays are needed :
 - _hash_[8] : 8 hash 32-bits-length values (initialising with the first 32 bits of the fractionnal part of the square root of the first 8 prime numbers)
 - _constant_[64] : 64 constant 32-bits-length values (initialising with the first 32 bits of the fractionnal part of the cube root of the first 64 prime numbers)  
+
 PS : you can find all the values in this document's annexe
 
 <br/>__Repeat the following steps for each 512-bits-length chunk of the input transformation__ :
